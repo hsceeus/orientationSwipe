@@ -8,3 +8,6 @@
 ## How to install ##
 1. Using this sample script requires [Android PhoneGap](http://github.com/phonegap/phonegap-android).
 2. To install the sample code, move www/* files to your project's www folder.
+
+## Working Sample
+Install swipe.apk from www/ folder to see it in action.
