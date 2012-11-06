@@ -1,0 +1,39 @@
+<!DOCTYPE HTML> 
+<html>
+<head>
+<meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0'/> 
+<link href='js/swipe/style.css' rel='stylesheet'/>
+	<script type="text/javascript" charset="utf-8" src="js/plugin/cordova-2.1.0.js"></script>
+	<script type="text/javascript" charset="utf-8" src="js/plugin/pg-plugin-screen-orientation.js"></script>
+</head>
+<body style="background-color: #333333;" onload="init();">
+
+<div id='slider4' class='swipe'>
+  <div>
+    <div style='display:block'><div><img src="images/pst_01.png"></div></div>
+    <div style='display:none'><div><img src="images/pst_02.png"></div></div>
+    <div style='display:none'><div><img src="images/pst_03.png"></div></div>
+    <div style='display:none'><div><img src="images/pst_04.png"></div></div>
+    <div style='display:none'><div><img src="images/pst_05.png"></div></div>
+    <div style='display:none'><div><img src="images/pst_06.png"></div></div>
+  </div>
+</div>
+
+<center>
+	 <input type="button" onclick="navigator.screenOrientation.set('reverseLandscape');return false;" value="Landscape" />
+     <input type="button" onclick="navigator.screenOrientation.set('portrait');return false;" value="Portrait" />
+     <input type="button" onclick="navigator.screenOrientation.set('fullSensor');return false;" value="Full Sensor" />
+</center>
+
+<script src='js/swipe/swipe.js'></script>
+<script>
+function init()
+{
+	document.addEventListener("deviceready", onDeviceReady, true);
+}
+	
+var slider4 = new Swipe(document.getElementById('slider4'),{auto: 3000});
+</script>
+
+</body> 
+</html> 
